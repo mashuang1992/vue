@@ -142,32 +142,8 @@ vue1.x和2.x的区别:
 		只能在自己定义的Vue对象中使用,在其它Vue对象中就使用不了了
 		
 ```
-### 全局的过滤器:
 
-```
-    
-	定义:
-		在main.js中定义即可
-			```
-				Vue.filter('toUpperCase',function(input){
-				    return input.toUpperCase();
-				});
-			```
-			
-	使用:
-		在组件的<template>标签中,使用的地方使用即可,例如
-			{{msg | tolowercase}}
-			
-	注意点:
-		全局过滤器的设置,一定要在创建Vue对象之前,否则不起作用
-	
-     注意点:
-      
-  	如果一个vue组件中,定义的私有过滤器的名称和全局过滤器的名称相同的化,私有过滤器的调用优先级高于全局过滤器
-
-```
-```
-私有过滤器：
+```bash
 
 <body>
         <div id="app1">
@@ -209,8 +185,33 @@ vue1.x和2.x的区别:
           })
 </script>
 ```
+
+### 全局的过滤器:
+
 ```
-全局过滤器：
+    
+	定义:
+		在main.js中定义即可
+			```
+				Vue.filter('toUpperCase',function(input){
+				    return input.toUpperCase();
+				});
+			```
+			
+	使用:
+		在组件的<template>标签中,使用的地方使用即可,例如
+			{{msg | tolowercase}}
+			
+	注意点:
+		全局过滤器的设置,一定要在创建Vue对象之前,否则不起作用
+	
+     注意点:
+      
+  	如果一个vue组件中,定义的私有过滤器的名称和全局过滤器的名称相同的化,私有过滤器的调用优先级高于全局过滤器
+
+```
+
+```bash
 
 <body>
         <div id="app1">
