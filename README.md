@@ -143,7 +143,7 @@ vue1.x和2.x的区别:
 		
 ```
 
-```bash
+```javascript
 
 <body>
         <div id="app1">
@@ -211,7 +211,7 @@ vue1.x和2.x的区别:
 
 ```
 
-```bash
+```javascript
 
 <body>
         <div id="app1">
